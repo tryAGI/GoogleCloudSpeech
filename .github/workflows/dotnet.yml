@@ -13,10 +13,12 @@ permissions:
 jobs:
   publish:
     name: Publish
-    uses: tryAGI/workflows/.github/workflows/generated-sdk-publish.yml@main
+    uses: tryAGI/workflows/.github/workflows/dotnet-sdk-build-test-publish.yml@main
     with:
-      project-path: src/libs/GoogleCloudSpeech/GoogleCloudSpeech.csproj
+      project-path: GoogleCloudSpeech.slnx
       enable-caching: false
+      publish: true
+      run-tests: true
       additional-test-arguments: '--logger GitHubActions'
     secrets:
       nuget-key: ${{ secrets.NUGET_KEY }}
