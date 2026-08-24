@@ -1,0 +1,5 @@
+{
+  "exampleSourceDirectory": "src/tests/IntegrationTests/Examples",
+  "apiKeyVariableName": "projectId",
+  "exampleIntro": "This example assumes `using GoogleCloudSpeech;` is in scope, `projectId` contains a Google Cloud project ID, and Application Default Credentials are configured."
+}
